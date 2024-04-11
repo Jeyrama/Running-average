@@ -10,3 +10,15 @@ rAvg(12) = 11;
 
 
 // Solution
+
+function runningAverage() {
+  let accumulator = 0;
+  let size = 0;
+
+  return function(number) {
+    accumulator += number;
+    size += 1;
+    
+    return Math.round(accumulator / size * 100) / 100;
+  };
+}
