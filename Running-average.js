@@ -24,3 +24,14 @@ function runningAverage() {
 }
 
 // or
+
+function runningAverage() {
+  let sum = 0;
+  let num = 0;
+  
+  return function (n) {
+    sum += n;
+    num += 1;
+    return parseFloat( (sum / num).toFixed(2) );
+  };
+}
