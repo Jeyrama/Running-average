@@ -22,3 +22,5 @@ function runningAverage() {
     return Math.round(accumulator / size * 100) / 100;
   };
 }
+
+// or
